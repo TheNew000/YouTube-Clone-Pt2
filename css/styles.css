@@ -65,7 +65,7 @@ img{
 } */
 
 #account-container{
-    width: 20%;
+    width: 25%;
     text-align: right;
 }
 
@@ -96,12 +96,21 @@ img{
     display: inline-block;
 }
 
+#secondary-videos{
+    vertical-align: top;
+}
+
 .small-video{
     border: 1px solid black;
 }
 
 .small-video, .small-video-text{
     display: inline-block;
+}
+
+.small-video-text{
+    padding-top: 5px;
+    vertical-align: top;
 }
 
 #right-rail-ad{
@@ -119,6 +128,20 @@ img{
 .more-video-item{
     display: inline-block;
     width: 24%;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    .more-video-item{
+        width: 48%;
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .more-video-item{
+        width: 90%;
+        margin: auto;
+    } 
 }
 
 .more-video-item img{
